@@ -4,25 +4,24 @@ import ecommerce from "../../../../../assets/icons/ecommerce-1.svg";
 import Individual from "../../../../../assets/icons/star-2.svg";
 import Training from "../../../../../assets/icons/graduate-1.svg";
 import Support from "../../../../../assets/icons/settings-2.svg";
+import { FC } from "react";
 
 export const images: string[] = [
-	Onepage,
-	Advanced,
-	ecommerce,
-	Individual,
-	Training,
-	Support,
+  Onepage,
+  Advanced,
+  ecommerce,
+  Individual,
+  Training,
+  Support,
 ];
 
-export const OfferIcon = (props: any) => {
-	return (
-		<>
-			<i className='offer-box-icons'>
-				<img
-					src={props.image}
-					alt=''
-				/>
-			</i>
-		</>
-	);
+type OfferIconProps = {
+  imgSrc: string;
+};
+export const OfferIcon: FC<OfferIconProps> = ({ imgSrc }) => {
+  return (
+    <i className="offer-box-icons">
+      <img src={imgSrc} alt="" />
+    </i>
+  );
 };

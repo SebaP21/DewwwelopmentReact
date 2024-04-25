@@ -1,3 +1,5 @@
+import {FC} from "react";
+
 const titles: string[] = [
 	"Strony internetowe-wizytówki",
 	"Rozbudowane strony internetowe",
@@ -7,6 +9,9 @@ const titles: string[] = [
 	"Wsparcie techniczne",
 ];
 
-export const OfferTitle = (props: any) => {
-	return <h3>{props.title}</h3>;
+type OfferTitleProps = {
+	title: string;
+}
+export const OfferTitle: FC<OfferTitleProps> = ({title}) => {
+	return <h3>{title}</h3>;
 };

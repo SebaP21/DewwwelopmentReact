@@ -1,5 +1,1 @@
-const BtnContent: string = "Dowiedz się więcej";
-
-export const OfferBtn = () => {
-	return <button className='btn'>{BtnContent}</button>;
-};
+export const OfferBtn = () => <button className='btn'>Dowiedz się więcej</button>
