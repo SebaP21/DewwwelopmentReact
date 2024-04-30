@@ -6,7 +6,7 @@ import Five from "../../../assets/icons/five (1).svg";
 import Six from "../../../assets/icons/six-1.svg";
 import { StepCard } from "./Stepscard/StepsCard";
 import { StepsCardProps } from "./Stepscard/StepsCard";
-import { title } from "process";
+
 
 export const Steps = () => {
 	return (

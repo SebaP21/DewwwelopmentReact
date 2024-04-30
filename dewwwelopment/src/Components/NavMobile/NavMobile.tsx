@@ -3,6 +3,7 @@ import { useState } from "react";
 import Xmark from "../../assets/icons/xmark-solid.svg";
 import Logo from "../../assets/img/dewwwelopment-low-resolution-logo-black-on-transparent-background-3.png";
 import styles from "./Nav.module.css";
+import { Link } from "react-router-dom";
 
 export const MobileNav = () => {
 	const [navigationVisible, setNavigationVisible] = useState(false);
@@ -51,7 +52,7 @@ export const MobileNav = () => {
 						<a href='#aboutus'>o nas</a>
 					</li>
 					<li>
-						<a href='#all-offer'>oferta</a>
+						<Link to="/offer">Oferta</Link>
 					</li>
 					<li>
 						<a href='#faq'>faq</a>

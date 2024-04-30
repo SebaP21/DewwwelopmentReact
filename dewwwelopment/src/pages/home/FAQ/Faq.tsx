@@ -1,9 +1,19 @@
-import { FaqItem, FaqItemProps } from "./FAQComponents/FaqItem";
 import { useState } from "react";
+import { FaqItem, FaqItemProps } from "./FAQComponents/FaqItem";
+// import { useState } from "react";
 
 export const Faq = () => {
-	
+	const [expandedItemId, setExpandedItemId] = useState<number | undefined>(0);
 
+	const handleExpand = (index: number) => {
+		setExpandedItemId((prev) => {
+			if (prev === index) {
+				return undefined;
+			}
+
+			return index;
+		});
+	};
 
 	return (
 		<>
@@ -23,6 +33,8 @@ export const Faq = () => {
 				<div className='faq-body'>
 					{faqItemData.map((data, index) => (
 						<FaqItem
+							expanded={expandedItemId === index}
+							expand={() => handleExpand(index)}
 							key={index}
 							question={data.question}
 							answer={data.answer}
@@ -35,7 +47,11 @@ export const Faq = () => {
 	);
 };
 
-const faqItemData: FaqItemProps[] = [
+//Partial,record,pick ,omit
+
+type SingleFaqItemData = Pick<FaqItemProps, "answer" | "question">;
+
+const faqItemData: SingleFaqItemData[] = [
 	{
 		question: "Jak długo trwa proces tworzenia strony internetowej?",
 		answer:

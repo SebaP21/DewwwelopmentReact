@@ -1,4 +1,4 @@
-import { FC, useState, VoidFunctionComponent } from "react";
+import { FC } from "react";
 
 type FaqQuestionProps = {
 	question: string;

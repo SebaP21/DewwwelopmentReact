@@ -5,23 +5,24 @@ import { FaqAnswer } from "./FaqAnswer";
 export type FaqItemProps = {
 	question: string;
 	answer: string;
+
+	expanded: boolean;
+	expand: () => void;
 };
 
-export const FaqItem: FC<FaqItemProps> = ({ question, answer }) => {
-	const [selected, setSelected] = useState(false);
-
-	const showFaQItem = () => {
-		setSelected((prevState) => !prevState);
-		console.log(setSelected);
-		console.log(FaqItem);
-	};
+export const FaqItem: FC<FaqItemProps> = ({
+	question,
+	answer,
+	expanded,
+	expand,
+}) => {
 	return (
 		<div className='faq-question'>
 			<FaqQuestion
 				question={question}
-				onClick={showFaQItem}
+				onClick={expand}
 			/>
-			{selected && <FaqAnswer answer={answer} />}
+			{expanded && <FaqAnswer answer={answer} />}
 		</div>
 	);
 };
