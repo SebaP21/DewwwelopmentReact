@@ -12,7 +12,7 @@ export type OfferCardProps = {
 }
 export const OfferCard: FC<OfferCardProps> = ({description, imgSrc, title}) => {
 	return (
-		<div className='offer-card'>
+		<div className='services-card'>
 			<OfferIcon imgSrc={imgSrc}/>
 			<OfferTitle title={title} />
 			<OfferDescription description={description} />

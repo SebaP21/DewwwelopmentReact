@@ -20,7 +20,7 @@
 	}
 	50% {
 		opacity: 1;
-		color: var(--accent-color);
+		/* color: var(--break-color); */
 		transform: scale(1.05);
 	}
 	100% {

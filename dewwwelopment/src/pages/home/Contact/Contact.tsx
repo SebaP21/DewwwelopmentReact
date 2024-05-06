@@ -1,20 +1,29 @@
+import { Form } from "react-router-dom";
+import { SectionHeading } from "../../../Components/SectionHeading/SectionHeading";
 import logo from "../../../assets/img/dewwwelopment-low-resolution-logo-black-on-transparent-background-3.png";
 
 export const Contact = () => {
+
+	
+
+
+
+
+
+
+
 	return (
 		<>
 			<section
 				id='contact'
 				className='contact'
 			>
-				<div className='contact-titles'>
-					<h4>Umów się na bezpłatną wycenę</h4>
-					<h2>Kontakt</h2>
-					<div className='decoration-line'></div>
-					<p>
-						Zadzwoń lub skorzystaj z formularza kontaktowego i wyślij wiadomość
-					</p>
-				</div>
+				<SectionHeading
+					ctaHeader='Umów się na bezpłatną wycenę'
+					mainHeader='Kontakt'
+					sectionDescription='Zadzwoń lub skorzystaj z formularza kontaktowego i wyślij wiadomość'
+					className='contact-titles'
+				/>
 				<div className='alert'>
 					<p
 						className='alert-text'
@@ -37,31 +46,7 @@ export const Contact = () => {
 						<a href='mailto:mail@mail.com'>@mail</a>
 					</div>
 					<div className='contact-form'>
-						<input
-							type='text'
-							id='name'
-							placeholder='Imię'
-						/>
-						<input
-							type='text'
-							id='surname'
-							placeholder='Nazwisko'
-						/>
-						<input
-							type='text'
-							id='email'
-							placeholder='Adres e-mail'
-						/>
-						<input
-							type='text'
-							id='tel'
-							placeholder='Telefon'
-						/>
-						<textarea
-							name='message'
-							id='message'
-							placeholder='Wiadomość'
-						></textarea>
+						<Form/>
 						<button className='btn btn-send'>Wyślij wiadomość</button>
 					</div>
 				</div>
@@ -69,3 +54,29 @@ export const Contact = () => {
 		</>
 	);
 };
+
+{/* <input
+	type='text'
+	id='name'
+	placeholder='Imię'
+/>
+<input
+	type='text'
+	id='surname'
+	placeholder='Nazwisko'
+/>
+<input
+	type='text'
+	id='email'
+	placeholder='Adres e-mail'
+/>
+<input
+	type='text'
+	id='tel'
+	placeholder='Telefon'
+/>
+<textarea
+	name='message'
+	id='message'
+	placeholder='Wiadomość'
+></textarea> */}

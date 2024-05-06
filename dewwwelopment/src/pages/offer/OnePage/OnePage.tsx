@@ -8,7 +8,7 @@ export const OnePage = () => {
 	return (
 		<ProductComponent
 			sectionId='onepage'
-			className='one-page'
+			className='one-page right'
 			sectionTitle='one-page'
 			productDescription={
 				<>

@@ -32,7 +32,7 @@ export const ProductComponent: FC<ProductProps> = ({
 					{productTitle}
 					{productDescription}
 				</div>
-				<div className='offer-media right'>
+				<div className='offer-media'>
 					<img src={productImg}></img>
 				</div>
 			</div>

@@ -13,8 +13,9 @@ export const Support = () => {
 			<SectionHeading {...supportHeaderData[0]} />
 
 			<div className='support-cards-box'>
-				{supportCardData.map((data) => (
+				{supportCardData.map((data,index) => (
 					<SupportCard
+						key={index}
 						title={data.title}
 						description={data.description}
 					/>

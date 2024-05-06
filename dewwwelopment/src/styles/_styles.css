@@ -55,6 +55,8 @@
 	background-color: var(--light-color);
 	border-bottom: 2px solid var(--main-color);
 	border-top: 2px solid var(--main-color);
+}
+.benefits-cta-animation{
 	animation: cta-fade 1s;
 }
 /* footer */

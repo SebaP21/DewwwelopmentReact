@@ -6,9 +6,16 @@ import Five from "../../../assets/icons/five (1).svg";
 import Six from "../../../assets/icons/six-1.svg";
 import { StepCard } from "./Stepscard/StepsCard";
 import { StepsCardProps } from "./Stepscard/StepsCard";
+// import { useInView } from "react-intersection-observer";
 
 
 export const Steps = () => {
+	// const{ref:Steps,inView} =useInView()
+
+	// inView&& console.log('ok');
+
+
+
 	return (
 		<>
 			<section

@@ -37,6 +37,7 @@
 }
 .section-h4-title {
 	color: var(--break-color);
+	padding-top: 2em;
 }
 .offer-wrapper {
 	margin: 2em;
@@ -47,21 +48,23 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
-	width: 100%;
+	width: 50%;
 	min-height: 55vh;
-	height: auto;
 	margin-right: 4em;
-	text-align: center;
+	order: 0;
 }
-.right {
+/* .right {
 	margin-left: 4em;
-}
+} */
 
 .offer-media {
 	margin-top: 3em;
 	background-color: var(--main-color);
 	height: 100%;
+	min-width: 45%;
+	max-width: 45%;
 }
+
 
 .right img {
 	margin: 2em 2em -2em -2em;
@@ -73,17 +76,18 @@
 	height: auto;
 	width: 100%;
 }
-.right img {
+/* .right img {
 	margin: 2em 2em -2em -2em;
 	height: auto;
 	width: 100%;
-}
+} */
+.advanced-project,
 .e-commerce h3,
 .e-commerce h5,
 .e-commerce p {
 	margin-bottom: 1em;
 }
-/* courses */
+
 
 .courses-title {
 	display: flex;
@@ -94,6 +98,9 @@
 	width: 40%;
 	height: 50%;
 	margin: 1em 0;
+}
+.courses-title .decoration-line{
+	margin: 2em;
 }
 .courses-title h2 {
 	margin: 0.5em 0;
@@ -166,8 +173,7 @@
 	opacity: 0.95;
 }
 .course-desctiption-cta {
-	/* display: flex; */
-	display: none;
+	display: flex;
 	align-items: center;
 	text-align: center;
 	background-color: var(--light-color);
@@ -179,6 +185,7 @@
 	text-shadow: 0px 1px 1px var(--break-color);
 	animation: fade-left 1s;
 }
+
 /* Support */
 .support {
 	position: relative;
@@ -592,5 +599,6 @@
 	.offer-price,
 	.e-commerce-price {
 		margin-top: 2em;
+		padding-bottom: 2em;
 	}
 }

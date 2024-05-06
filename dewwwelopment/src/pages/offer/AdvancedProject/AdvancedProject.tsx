@@ -5,7 +5,7 @@ export const AdvancedProject = () => {
 	return (
 		<ProductComponent
 			sectionId='advancedproject'
-			className='advanced-project'
+			className='advanced-project right'
 			sectionTitle='do 6 podstron'
 			productDescription={
 				<>

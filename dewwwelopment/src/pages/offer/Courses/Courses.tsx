@@ -19,8 +19,9 @@ export const Courses = () => {
 
 				<div className='courses-tasks'>
 					<div className='task-box'>
-						{courseTaskData.map((data) => (
+						{courseTaskData.map((data,index) => (
 							<CourseTask
+								key={index}
 								img={data.img}
 								taskTitle={data.taskTitle}
 								taskDescription={data.taskDescription}

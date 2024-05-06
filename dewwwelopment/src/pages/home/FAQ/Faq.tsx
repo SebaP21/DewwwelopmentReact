@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FaqItem, FaqItemProps } from "./FAQComponents/FaqItem";
+import { SectionHeading } from "../../../Components/SectionHeading/SectionHeading";
 // import { useState } from "react";
 
 export const Faq = () => {
@@ -20,16 +21,14 @@ export const Faq = () => {
 			<section
 				id='faq'
 				className='faq'
-			>
-				<div className='faq-titles'>
-					<h4>Najczęściej zadawane pytania</h4>
-					<h2>FAQ</h2>
-					<p className='decoration-line'></p>
-					<p className='faq-p'>
-						Nie znalazłeś odpowiedzi na swoje pytanie? <br />
-						Zadzwoń do Nas lub skorzystaj z formularza kontaktowego
-					</p>
-				</div>
+
+				>
+				<SectionHeading
+				ctaHeader="Najczęściej zadawane pytania"
+				mainHeader="FAQ"
+				sectionDescription="Nie znalazłeś odpowiedzi na swoje pytanie?Zadzwoń do Nas lub skorzystaj z formularza kontaktowego"
+				className="faq-titles"
+				/>
 				<div className='faq-body'>
 					{faqItemData.map((data, index) => (
 						<FaqItem

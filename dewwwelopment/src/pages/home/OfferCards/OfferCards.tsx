@@ -6,6 +6,7 @@ import ecommerce from "../../../assets/icons/ecommerce-1.svg";
 import individual from "../../../assets/icons/star-2.svg";
 import Training from "../../../assets/icons/graduate-1.svg";
 import Support from "../../../assets/icons/settings-2.svg";
+import { SectionHeading } from "../../../Components/SectionHeading/SectionHeading";
 
 export const Offerbox = () => {
 	// const { ref, inView } = useInView();
@@ -14,15 +15,21 @@ export const Offerbox = () => {
 	return (
 		<section
 			id='all-offer'
-			className='offer-box'
+			className='services-box'
 			// ref={ref}
 		>
-			<div className='offer-title'>
+
+			<SectionHeading
+			ctaHeader="co oferujemy?"
+			mainHeader="usługi"
+			className="services-title"
+			/>
+			{/* <div className='services-title'>
 				<span className='decoration-line'></span>
 				<h4>Co oferujemy?</h4>
 				<h2>usługi</h2>
-			</div>
-			<div className='offer-cards-box'>
+			</div> */}
+			<div className='services-cards-box'>
 				{offerCardsData.map((data, index) => (
 					<OfferCard
 						key={index}

@@ -1,3 +1,4 @@
+import { idText } from "typescript";
 import picture from "../../../assets/img/Dewwwelopment-projektowanie.jpg";
 import logo from "../../../assets/img/dewwwelopment-low-resolution-logo-white-on-transparent-background (2).png";
 

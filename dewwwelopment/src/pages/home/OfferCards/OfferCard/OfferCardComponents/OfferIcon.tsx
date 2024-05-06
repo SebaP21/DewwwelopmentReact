@@ -19,7 +19,7 @@ type OfferIconProps = {
 };
 export const OfferIcon: FC<OfferIconProps> = ({ imgSrc }) => {
   return (
-    <i className="offer-box-icons">
+    <i className="services-box-icons">
       <img src={imgSrc} alt="" />
     </i>
   );

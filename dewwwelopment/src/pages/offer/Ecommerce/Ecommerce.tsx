@@ -5,7 +5,7 @@ export const Ecommerce = () => {
 	return (
 		<ProductComponent
 			sectionId='ecommerce'
-			className='e-commerce'
+			className='e-commerce right'
 			sectionTitle='e-commerce'
 			productDescription={
 				<>

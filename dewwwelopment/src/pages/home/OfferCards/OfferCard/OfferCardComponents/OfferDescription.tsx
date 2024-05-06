@@ -46,7 +46,7 @@ type OfferDescriptionProps = {
 }
 export const OfferDescription: FC<OfferDescriptionProps> = ({description}) => {
     return (
-        <p className='offer-description'>
+        <p className='services-description'>
             {description}
         </p>
     );
